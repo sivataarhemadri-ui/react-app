@@ -1,0 +1,37 @@
+{
+  "component": "ScratchCard",
+  "goal": "Create a premium scratch card experience inspired by Paytm / PhonePe",
+  "visualStyle": {
+    "background": "dark slate gradient",
+    "cardSurface": "rounded 28px with soft border and glow",
+    "scratchOverlay": "silver gradient with subtle metallic noise",
+    "revealPanel": "rich emerald / cyan accent with sparkle glints",
+    "typography": {
+      "headline": "Bold, high contrast white",
+      "label": "Uppercase micro copy with tracking",
+      "body": "Soft slate text for secondary details"
+    }
+  },
+  "interaction": {
+    "gesture": "pointer drag to reveal",
+    "threshold": 0.62,
+    "feedback": "full clear with reward reveal and confetti style accents",
+    "successState": "collect reward button and copy code action"
+  },
+  "states": {
+    "available": "Silver overlay visible, slide to scratch",
+    "unlocked": "Reward details visible, collect action active",
+    "collected": "Badge or collected indicator shown"
+  },
+  "features": [
+    "interactive scratch canvas",
+    "reward code copy button",
+    "voucher summary panel",
+    "expiry and condition badges",
+    "animated reward reveal styling"
+  ],
+  "recommendations": {
+    "placement": "Use on donation success and reward dashboard screens",
+    "UX": "Keep copy button visible only after reveal, add a status chip, and use rich gradients for premium feel"
+  }
+}
