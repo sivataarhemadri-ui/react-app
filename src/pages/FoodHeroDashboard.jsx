@@ -312,12 +312,6 @@ function MapModal({ item, onClose, externalLink }) {
             Distance: {item.distance_km?.toFixed(1)} km
           </div>
 
-          {geoError && (
-            <div className="rounded-2xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-              {geoError}
-            </div>
-          )}
-
           <div className="rounded-3xl overflow-hidden border border-slate-200 h-72">
             <MapContainer center={center} bounds={userPos ? [...route, [userPos.lat, userPos.lng]] : route} zoom={13} scrollWheelZoom={false} className="h-full w-full">
               <TileLayer
